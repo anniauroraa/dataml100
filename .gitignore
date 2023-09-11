@@ -2,5 +2,7 @@
 build*/
 examples
 templates
+*.txt
+*.png
 
 
