@@ -8,7 +8,7 @@ def get_nearest_neighbors(vector, n):
     # Calculate Euclidean distances
     distances = np.linalg.norm(W - vector, axis=1)
 
-    # Get the indices of the 3 closest vectors
+    # Get the indices of the n amount of closest vectors
     k = n
     nearest_indices = np.argpartition(distances, k)[:k]
     sorted = np.argsort(distances[nearest_indices])
